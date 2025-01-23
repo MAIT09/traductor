@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor </title>
+  <link rel="stylesheet" href="tyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Traductor Arator</h1>
+    <div class="input-area">
+      <textarea id="inputText" placeholder="Escribe aquí el texto" rows="4"></textarea>
+      <select id="languageFrom">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+        <option value="it">Italiano</option>
+      </select>
+    </div>
+
+    <div class="output-area">
+      <button onclick="translateText()">Traducir</button>
+      <textarea id="outputText" placeholder="Resultado" rows="4" readonly></textarea>
+      <select id="languageTo">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+        <option value="it">Italiano</option>
+      </select>
+    </div>
+  </div>
+  <script src="fun.js"></script>
+</body>
+</html>
